@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar li a.active {
+  color: #776B5D;
+}
+
+nav ul li a {
+  color: black;
+}

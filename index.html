@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="/src/assets/logo.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JavaScript -->
+    <script src="/src/js/navbar.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B0A695',
+                        primarydark: '#776B5D',
+                        secondary: '#ca8a04',
+                        dark: '#1f2937',
+                        light: '#6b7280',
+                        extralight: '#e4e0d8'
+                    },
+                    screens: {
+                        'sm': '400px'
+                    }
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+                <span class="font-bold text-primarydark lg:text-lg sm:text-xl cursor-pointer">
+                    Novianti Safitri
+                </span>
+                <span class="text-primarydark text-4xl lg:text-lg cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+
+            <ul
+                class="navbar font-bold sm:p-0 md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#home" class="text-base hover:text-primarydark duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#about" class="text-base hover:text-primarydark duration-500">About</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#achievement" class="text-base hover:text-primarydark duration-500">Achievements</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#skill" class="text-base hover:text-primarydark duration-500">Skills</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#project" class="text-base hover:text-primarydark duration-500">Projects</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base hover:text-primarydark duration-500">Contact</a>
+                </li>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="bg-extralight pt-24 min-h-screen flex justify-center items-center dark:bg-primary">
+        <div class="container">
+            <div class="flex flex-wrap text-center">
+                <div class="w-full self-center px-4 h-96">
+                    <h1 id="typing-text" class="text-base font-semibold text-dark md:text-xl">Hi, I am <span
+                            class="block font-bold text-primarydark text-4xl mt-1 lg:text-5xl">
+                        </span></h1>
+                    <h2 class="font-medium text-primarydark text-lg m-5 lg:text-2xl bold">Student
+                        | <span class="text-black dark:text-slate-300">Mulawarman University</span></h2>
+                    <p class="font-medium text-dark mb-5 leading-relaxed lg:w-1/2 sm:w-full mx-auto">
+                        Welcome to my portfolio! I am Novi, a student who has an interest in the world of technology and
+                        business.
+                        Find out more about me here.
+                        <span class="text-primarydark font-bold"><br></span></p>
+                    <!-- <a href="#contact"
+                            class="text-base font-semibold text-dark border border-primarydark bg-white py-3 px-8 rounded m-2 hover:shadow-lg hover:bg-primarydark hover:text-white hover:opacity-80 transition duration-300 ease-in-out">Contact</a> -->
+                    <div class="sosmed flex items-center justify-center mb-10">
+                        <a href="https://github.com/noviantisafitri" target="_blank" class="mr-4"><i
+                                class="fab fa-github text-[2rem]"></i></a>
+                        <hr class="h-10 w-0.5 border-none bg-black">
+                        <a href="https://www.linkedin.com/in/novianti-safitri-963693202/" target="_blank"
+                            class="mx-4"><i class="fab fa-linkedin-in text-[2rem]"></i></a>
+                        <hr class="h-10 w-0.5 border-none bg-black">
+                        <a href="https://www.instagram.com/novi.sftr_/" target="_blank" class="ml-4"><i
+                                class="fab fa-instagram text-[2rem]"></i></a>
+                    </div>
+                    <a href="#about"
+                        class="text-base font-semibold border-2 bg-extralight border border-primarydark text-primarydark py-3 px-8 rounded-lg m-2 hover:shadow-lg hover:border-2 hover:opacity-80 hover:bg-primarydark hover:border hover:text-white hover:border-primarydark transition duration-300 ease-in-out">Read
+                        More</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class=" sm:pt-24 lg:pt-20 pb-16 min-h-screen flex justify-center items-center lg:px-24 mt-10">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class=" sm:pl-10 text-dark uppercase tracking-widest font-medium text-4xl">
+                    About Me
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row sm:flex-column justify-between mt-10 sm:px-10">
+                <!-- Sebelah kiri -->
+                <div class="md:w-1/2 sm:order-2">
+                    <p class="font-medium text-black mb-5 leading-relaxed sm:text-center lg:text-start">As an
+                        Information Systems student, I have
+                        studied various aspects of technology and business,
+                        with a particular focus on programming. I am very interested in learning more about programming
+                        and
+                        perfecting my skills in this area.
+                        I really hope to be able to learn many new things and increase my interest in the field of
+                        technology.
+                        I aspire to start my career in programming and eventually become
+                        a software engineer.
+                    </p>
+                    <hr class="w-full mb-5">
+                    <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mb-10">
+
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user mr-3"></i>
+                            <p>Novianti Safitri</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3"></i>
+                            <p>+62 858 2165 8572</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3"></i>
+                            <p>noviantis112@gmail.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-calendar-days mr-3"></i>
+                            <p>Born on 21 Nov, 2004</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-building-columns mr-3"></i>
+                            <p>Student</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-3"></i>
+                            <p>Samarinda, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sebelah Kanan -->
+                <div class="md:w-1/2 sm:order-1 lg:order-2">
+                    <div class="">
+                        <img src="/src/assets/profile.jpg" alt="Novianti Safitri"
+                            class="h-auto xl:w-3/4 mx-auto rounded">
+                        <p class="text-primarydark text-center mt-3 italic sm:mb-5 lg:mx-10">"Failure is not the end,
+                            but a stepping stone to success. Embrace it, learn from it, and keep moving forward."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="about" class="bg-extralight min-h-screen flex justify-center items-center">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class="text-dark uppercase tracking-widest font-medium text-4xl">
+                    Educations
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+            </div>
+            <div class="sm:px-10 md:pr-36">
+                <div
+                    class="mt-10 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-primarydark before:to-transparent">
+                    <div class="relative">
+                        <div class="md:flex items-center md:space-x-4 mb-3">
+                            <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+
+                                <div
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
+                                    <i class="fa-solid fa-book-open text-primarydark"></i>
+                                </div>
+                                <time class="md:w-28"></time>
+                            </div>
+                            <div class="text-slate-500 ml-14">2022 - Present <br><span
+                                    class="text-slate-900 font-bold">Mulawarman University</span></div>
+                        </div>
+
+                        <div
+                            class="bg-primarydark p-4 rounded border border-slate-200 text-white shadow ml-14 md:ml-44">
+                            Currently pursuing my bachelor's degree in Information Systems at Mulawarman University.
+                            Through
+                            my studies here, I honed my skills and knowledge to prepare myself for a successful career
+                            in
+                            computers and business.
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="md:flex items-center md:space-x-4 mb-3">
+                            <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+
+                                <div
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
+                                    <i class="fa-solid fa-graduation-cap text-primarydark"></i>
+                                </div>
+                                <time class="md:w-28"></time>
+                            </div>
+                            <div class="text-slate-500 ml-14">2019-2022 <br><span class="text-slate-900 font-bold">MA
+                                    Miftahul Ulum</span></div>
+                        </div>
+
+                        <div
+                            class="bg-primarydark p-4 rounded border border-slate-200 text-white shadow ml-14 md:ml-44">
+                            Graduated from senior secondary education at MA Miftahul Ulum. During my time there, I
+                            developed
+                            a strong foundation in a variety of subjects and gained valuable insight into academic
+                            disciplines and personal growth.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="about"
+        class="bg-primary pt-24 pb-24 min-h-screen flex justify-center items-center sm:px-10 md:px-32">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class="text-black uppercase tracking-widest font-medium text-4xl">
+                    Experiences
+                </h1>
+                <div class="h-0.5 bg-black w-14 mx-auto"></div>
+                <p class="text-dark text-base leading-6">Here are some of my experiences in recent times.</p>
+            </div>
+            <div
+                class="mt-10 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-primarydark before:to-transparent">
+                <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]: text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <time class="font-caveat font-medium text-indigo-500">January 2024 - Present</time>
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Algorithm and Data Structure Laboratory Assistant
+                            </div>
+                        </div>
+                        <div class="text-slate-500">Teaching algorithm and data structure using Python programming
+                            language.</div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <time class="font-caveat font-medium text-amber-500">September 2023 - November 2023</time>
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Basic Programming Laboratory Assistant</div>
+                        </div>
+                        <div class="text-slate-500">Instructing logic and fundamental programming concepts using Python.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <time class="font-caveat font-medium text-amber-500">September 2023 - November 2023</time>
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Treasurer of INSEVENT 2023</div>
+                        </div>
+                        <div class="text-slate-500">Managing financial inflow and outflow, as well as preparing
+                            financial reports.</div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <time class="font-caveat font-medium text-amber-500">March 2023 - December 2023</time>
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Secretary of Biro INKRE</div>
+                        </div>
+                        <div class="text-slate-500">
+                            Preparing financial reports, handling minutes of meetings, creating work program reports,
+                            and accountability reports.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <time class="font-caveat font-medium text-amber-500">February 2020 - June 2022</time>
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Tutor at Private Tutoring Center</div>
+                        </div>
+                        <div class="text-slate-500">
+                            Tutoring elementary school subjects and middle school mathematics, gaining valuable
+                            experience through interactions with many students.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement -->
+    <section id="achievement" class="bg-extralight lg:px-24 sm:pt-28 lg:pt-0 min-h-screen flex justify-center items-center">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class="text-dark uppercase tracking-widest font-medium text-4xl">
+                    ACHIEVEMENTS
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+                <p class="text-dark text-base leading-6">Several achievements that I have achieved in recent times.</p>
+            </div>
+
+            <div class="sm:px-10 mt-10">
+                <ol class="grid xl:grid-cols-3 sm:grid-cols-1 gap-6 items-center">
+                    <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                            <div
+                                class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="hidden sm:flex w-full bg-primarydark h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">1st in the Provincial High
+                                School Chemistry Science Olympiad Competition</h3>
+                            <time
+                                class="text-primarydark block mb-2 text-sm font-normal leading-none text-primarydark dark:text-gray-500">
+                                December 2021</time>
+                            <p class="text-base font-normal text-gray-500">This competition is an event where students
+                                from various high schools throughout the province compete in the field of chemistry.
+                                This is where I became interested in studying Chemistry.</p>
+                    </li>
+                    <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                            <div
+                                class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="hidden sm:flex w-full bg-primarydark h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">1st in the Integrated
+                                Mathematics Madrasah Science Competition
+                            </h3>
+                            <time
+                                class="text-primarydark block mb-2 text-sm font-normal leading-none text-primarydark dark:text-gray-500">
+                                August 2021</time>
+                            <p class="text-base font-normal text-gray-500">This competition is an event where students
+                                from Madrasah compete in the field of mathematics. The participants were tested in their
+                                understanding of mathematical concepts integrated in 3 languages.</p>
+                        </div>
+                    </li>
+                    <li class="relative mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                            <div
+                                class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="hidden sm:flex w-full bg-primarydark h-0.5 dark:bg-gray-700"></div>
+                        </div>
+                        <div class="mt-3 sm:pe-8">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Participants in the National
+                                Integrated Mathematics Madrasah Science Competition
+                            </h3>
+                            <time
+                                class="text-primarydark block mb-2 text-sm font-normal leading-none text-primarydark dark:text-gray-500">November
+                                2020</time>
+                            <p class="text-base font-normal text-gray-500">Even though I did not achieve the highest
+                                ranking at the national level, participation in this competition demonstrated my
+                                interest in developing my understanding and skills of mathematics in 3 languages.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skill" class="pt-10 min-h-screen flex justify-center items-center">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class="text-dark uppercase tracking-widest font-medium text-4xl">
+                    SKILLS
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+                <p class="text-dark text-base leading-6">Some skills that I continue to learn and master.</p>
+            </div>
+            <div class="max-w-xl mx-auto mt-10 sm:px-10 grid grid-cols-1 xl:grid-cols-2 gap-x-16">
+                <!-- Skills kiri -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">HTML</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">100%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">CSS</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">90%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">JavaScript</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">65%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">PHP</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">50%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">React JS</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">60%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <!-- Skills kanan -->
+                <div class="">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">Python</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">85%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">Java</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">75%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">MySQL</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">80%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">MongoDB</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">50%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-base font-medium text-dark-700 dark:text-white">Corel Draw</span>
+                        <!-- <span class="text-sm font-medium text-dark-700 dark:text-white">75%</span> -->
+                    </div>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+                        <div class="bg-primarydark h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                    <!-- tambahkan divs tambahan di sini -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project"
+        class="sm:pt-24 sm:px-10 sm:pb-10 bg-extralight pt-20 min-h-screen flex justify-center items-center">
+        <div class="container">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 id="projectsTitle" class="text-dark uppercase tracking-widest font-medium text-4xl">
+                    PROJECTS
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+                <p class="text-dark text-base leading-6">I have created several projects in various programming.
+                    languages</p>
+            </div>
+            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:m-8 sm:m-4 mt-10"></div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="min-h-screen flex justify-center items-center">
+        <div class="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
+            <div class="lg:w-2/3 space-y-5 text-center mx-auto">
+                <h1 class="text-dark uppercase tracking-widest font-medium text-4xl">
+                    Get In Touch
+                </h1>
+                <div class="h-0.5 bg-primarydark w-14 mx-auto"></div>
+                <p class="text-dark text-base leading-6">If you would like to discuss something on your mind, please
+                    feel free to contact me via the contact form available on this website. I would be happy to interact
+                    with you.</p>
+            </div>
+            <div class="sosmed mt-5 flex items-center justify-center">
+
+                <a href="https://github.com/noviantisafitri" target="_blank" class="mr-4"><i
+                        class="fab fa-github text-[1.7rem]"></i></a>
+                <a href="https://www.linkedin.com/in/novianti-safitri-963693202/" target="_blank" class="mx-4"><i
+                        class="fab fa-linkedin-in text-[1.7rem]"></i></a>
+                <a href="https://www.instagram.com/novi.sftr_/" target="_blank" class="ml-4"><i
+                        class="fab fa-instagram text-[1.7rem]"></i></a>
+            </div>
+            <div class="lg:col-span-2 mt-8 lg:px-40">
+                <form id="form__contact">
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name"
+                                class="form-input border border-gray-500 text-gray-900 text-sm rounded focus:ring-0 focus:border-gray-400 block w-full p-3"
+                                placeholder="Enter your name" />
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email"
+                                class="form-input border border-gray-500 text-gray-900 text-sm rounded focus:ring-0 focus:border-gray-400 block w-full p-3"
+                                placeholder="Enter your email" />
+                        </div>
+                        <div class="space-y-6">
+                            <label for="telepon" class="sr-only">telepon</label>
+                            <input type="telepon" name="telepon" id="telepon"
+                                class="form-input border border-gray-500 text-gray-900 text-sm rounded focus:ring-0 focus:border-gray-400 block w-full p-3"
+                                placeholder="Enter your phone number" />
+                        </div>
+                        <div class="space-y-6">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" name="message"
+                                class=" resize-none h-32 form-textarea border border-gray-500 text-gray-900 text-sm rounded focus:ring-0 focus:border-gray-400 block w-full p-3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-primarydark text-white px-6 py-3 rounded-md text-sm uppercase tracking-wider font-bold hover:bg-primary-light transition-colors duration-300 focus:outline-none focus:bg-primary-light">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-center mb-5 flex justify-center items-cente">© 2024 Novianti Safitri. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- End -->
+    <script src="/src/js/home.js"></script>
+    <script src="/src/js/contact.js"></script>
+    <script src="/src/js/project.js"></script>
+</body>
+
+</html>
