@@ -4,22 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
         { 
           title: "Java Project", 
           description: "This project was developed using the Java programming language.", 
-          image: "/src/assets/p_pgedung.png" 
+          image: "src/assets/p_pgedung.png" 
         },
         { 
           title: "React Website", 
           description: "This website project utilizes the React Js framework for development.", 
-          image: "/src/assets/p_Insevent.png" 
+          image: "src/assets/p_Insevent.png" 
         },
         { 
           title: "Online Store", 
           description: "This website project was created using both JavaScript and PHP programming languages.", 
-          image: "/src/assets/p_onlineStore.jpg" 
+          image: "src/assets/p_onlineStore.jpg" 
         },
         { 
           title: "Java Room Reservation", 
           description: "This project was developed using the Java programming language for room reservation purposes.", 
-          image: "/src/assets/p_peminjamanR.jpg" 
+          image: "src/assets/p_peminjamanR.jpg" 
         }
       ];
       
